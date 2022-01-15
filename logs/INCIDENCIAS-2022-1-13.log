@@ -1,4 +1,0 @@
-{"level":"info","message":"✌️ Express loaded","timestamp":"2022-01-13 22:08:10"}
-{"level":"info","message":"\n      ################################################\n      🛡️  Server listening on port: 3000 🛡️\n      ################################################\n    ","timestamp":"2022-01-13 22:08:10"}
-{"level":"info","message":"✌️ DB loaded and connected!","timestamp":"2022-01-13 22:08:10"}
-{"0":{"eliminado":0,"f_create":"2022-01-12T02:20:47.000Z","f_update":null,"id_marca":4,"nombre":"Dell","u_create":"rwillians","u_update":"rwillians"},"level":"info","message":"marcas: ","timestamp":"2022-01-13 22:08:18"}
