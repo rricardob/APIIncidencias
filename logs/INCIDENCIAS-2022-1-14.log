@@ -1,0 +1,14 @@
+{"level":"info","message":"✌️ Express loaded","timestamp":"2022-01-14 23:50:21"}
+{"level":"info","message":"\n      ################################################\n      🛡️  Server listening on port: 3000 🛡️\n      ################################################\n    ","timestamp":"2022-01-14 23:50:21"}
+{"level":"info","message":"✌️ DB loaded and connected!","timestamp":"2022-01-14 23:50:21"}
+{"0":{"eliminado":0,"f_create":"2022-01-12T02:20:47.000Z","f_update":null,"id_marca":4,"nombre":"Dell","u_create":"rwillians","u_update":"rwillians"},"level":"info","message":"marcas: ","timestamp":"2022-01-14 23:54:10"}
+{"eliminado":0,"f_create":"2022-01-12T02:20:47.000Z","f_update":null,"id_marca":4,"level":"info","message":"found marca: ","nombre":"Dell","timestamp":"2022-01-14 23:54:28","u_create":"rwillians","u_update":"rwillians"}
+{"eliminado":"0","f_create":"2022-01-11 21:20:47","id":5,"level":"info","message":"created marca: ","nombre":"HP pavillion","timestamp":"2022-01-14 23:54:59","u_create":"rwillians","u_update":"rwillians"}
+{"0":{"eliminado":0,"f_create":"2022-01-12T02:20:47.000Z","f_update":null,"id_marca":4,"nombre":"Dell","u_create":"rwillians","u_update":"rwillians"},"1":{"eliminado":0,"f_create":"2022-01-12T02:20:47.000Z","f_update":null,"id_marca":5,"nombre":"HP pavillion","u_create":"rwillians","u_update":"rwillians"},"level":"info","message":"marcas: ","timestamp":"2022-01-14 23:55:05"}
+{"level":"info","message":{"eliminado":"0","f_create":"2022-01-11 21:20:47","f_update":"2022-01-11 21:20:47","id_marca":"1","nombre":"Acer","u_create":"rocco","u_update":"rocco"},"timestamp":"2022-01-14 23:55:26"}
+{"eliminado":"0","f_create":"2022-01-11 21:20:47","f_update":"2022-01-11 21:20:47","id":"4","id_marca":"1","level":"info","message":"updated marca: ","nombre":"Acer","timestamp":"2022-01-14 23:55:26","u_create":"rocco","u_update":"rocco"}
+{"0":{"eliminado":0,"f_create":"2022-01-12T02:20:47.000Z","f_update":"2022-01-12T02:20:47.000Z","id_marca":4,"nombre":"Acer","u_create":"rwillians","u_update":"rocco"},"1":{"eliminado":0,"f_create":"2022-01-12T02:20:47.000Z","f_update":null,"id_marca":5,"nombre":"HP pavillion","u_create":"rwillians","u_update":"rwillians"},"level":"info","message":"marcas: ","timestamp":"2022-01-14 23:55:32"}
+{"0":"4","level":"info","message":"deleted marca with id: ","timestamp":"2022-01-14 23:56:05"}
+{"0":{"eliminado":0,"f_create":"2022-01-12T02:20:47.000Z","f_update":null,"id_marca":5,"nombre":"HP pavillion","u_create":"rwillians","u_update":"rwillians"},"level":"info","message":"marcas: ","timestamp":"2022-01-14 23:56:11"}
+{"level":"info","message":"deleted 1 marca","timestamp":"2022-01-14 23:56:23"}
+{"level":"info","message":"marcas: ","timestamp":"2022-01-14 23:56:28"}

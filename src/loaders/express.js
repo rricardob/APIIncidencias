@@ -33,7 +33,7 @@ const expressUp =  ( app ) => {
     app.use(express.json());
     // Load API routes
     //app.use(config.api.prefix, routes(app));
-    require("../routes/routes.js")(app);
+    require("../routes/index.js")(app);
   
     // API Documentation
     /*app.use(OpticMiddleware({
