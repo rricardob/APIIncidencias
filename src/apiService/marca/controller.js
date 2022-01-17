@@ -14,32 +14,48 @@ exports.create = (req, res) => {
   const marca = new Marca({
     nombre: req.body.nombre,
     eliminado: req.body.eliminado,
-    f_create: req.body.f_create,
     u_create: req.body.u_create,
     u_update: req.body.u_update
   });
 
-  // Save Marca in the database
-  Marca.create(marca, (err, data) => {
-    if (err)
+  // validate repeated
+
+  Marca.findByName(marca.nombre, (err, data) => {
+    if (err) {
       res.status(500).send({
         message:
-          err.message || "Some error occurred while creating the Marca."
+          err.message || "Some error occurred while validate the Marca."
+      })
+    }
+
+    if (data === 1) {
+      res.send({
+        message: "La marca que intenas registrar ya existe, verifique los datos"
+      })
+    } else {
+      // Save Marca in the database
+      Marca.create(marca, (err, data) => {
+        if (err)
+          res.status(500).send({
+            message:
+              err.message || "Some error occurred while creating the Marca."
+          });
+        else res.send(data);
       });
-    else res.send(data);
+    }
   });
 };
 
 // Retrieve all Marcas from the database (with condition).
 exports.findAll = (req, res) => {
   Marca.getAll((err, data) => {
-    if (err){
+    if (err) {
       Logger.error(`Error: ${err}`);
       res.status(500).send({
         message:
           err.message || "Some error occurred while retrieving Marcas."
-      });      
-    }else res.send(data);
+      });
+    } else res.send(data);
   });
 };
 
@@ -108,7 +124,7 @@ exports.delete = (req, res) => {
 };
 
 // Delete all Tutorials from the database.
-exports.deleteAll = (req, res) => {
+/*exports.deleteAll = (req, res) => {
   Marca.removeAll((err, data) => {
     if (err)
       res.status(500).send({
@@ -117,4 +133,4 @@ exports.deleteAll = (req, res) => {
       });
     else res.send({ message: `All Marcas were deleted successfully!` });
   });
-};
+};*/

@@ -1,3 +1,4 @@
+const moment = require("moment");
 class Utils {
 
     static getCurrentTimeStamp() {
@@ -13,6 +14,11 @@ class Utils {
         // prints date & time in YYYY-MM-DD format
 
         return `${year}-${month}-${date}`;
+    }
+
+
+    static getCurrentDateTime(){
+         return moment().format('YYYY-MM-DD h:mm:ss a');
     }
 
 }
